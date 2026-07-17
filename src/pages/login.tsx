@@ -183,35 +183,6 @@ export default function LoginPage() {
                   className="w-full"
                 />
               </div>
-              <div className="mt-4 text-center text-sm relative pb-12">
-                {shouldShowPassword ? (
-                  <>
-                    <Link
-                      to="/forgot-password"
-                      className="text-sm font-medium text-primary-500 hover:opacity-70"
-                    >
-                      Forgot password?
-                    </Link>
-                    <div className="absolute bottom-0 left-0 right-0 pt-4">
-                      <IVButton
-                        theme="plain"
-                        label="Go back"
-                        className="font-medium text-primary-500 hover:opacity-70"
-                        onClick={() => {
-                          setShouldShowPassword(false)
-                        }}
-                      />
-                    </div>
-                  </>
-                ) : (
-                  <Link
-                    to="/signup"
-                    className="text-sm font-medium text-primary-500 hover:opacity-70"
-                  >
-                    Create an account &rsaquo;
-                  </Link>
-                )}
-              </div>
             </Form>
           )}
         </Formik>
