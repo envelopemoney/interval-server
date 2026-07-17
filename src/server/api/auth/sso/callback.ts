@@ -179,7 +179,7 @@ export default async function callback(req: Request, res: Response) {
       deletedAt: u.deletedAt,
     })
 
-    return res.redirect('/signup?ACCOUNT_DISABLED')
+    return res.redirect('/')
   }
 
   if (!u) {
