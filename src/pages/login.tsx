@@ -44,13 +44,7 @@ export default function LoginPage() {
 
   return (
     <div className="flex items-center justify-center min-h-screen">
-      <Helmet>
-        <title>Log in | Interval</title>
-      </Helmet>
       <div className="w-full max-w-sm p-8 mx-auto max">
-        <div className="mb-6">
-          <AuthPageHeader title="Welcome back" />
-        </div>
         <Formik<{ email: string; password: string }>
           initialValues={{
             email: prefilledEmail || '',
